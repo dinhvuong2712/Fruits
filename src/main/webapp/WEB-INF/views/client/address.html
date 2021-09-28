@@ -1,0 +1,142 @@
+    <div class="card bg-transparent text-muted border px-4" id="address_account">
+        <div class="card-header bg-transparent d-flex align-items-center justify-content-between px-0 py-4">
+            <h4 class="mb-0">My Address</h4>
+            <button type="button" class="btn btn bg-green text-white d-flex align-items-center" href="#">
+                <ion-icon name="create-outline" class="fs-4"></ion-icon>
+                <span class="ps-2">Add new address</span>
+            </button>
+        </div>
+        <div class="card-body overflow-hidden px-0 py-0">
+            <div class="list row py-4">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <label class="col-sm-4 col-form-label text-end text-nowrap">Full
+                            Name</label>
+                        <div class="col-sm-8 d-flex align-items-center">
+                            <p class="mb-0 fs-6 fw-bold">Your Full Name</p>
+                            <span class="badge bg-primary ms-3">default</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4 col-form-label pt-0 text-end text-nowrap">Phone
+                            Number</label>
+                        <div class="col-sm-8">
+                            <p class="mb-0 fs-6 fw-bold">Your Phone Number</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4 col-form-label pt-0 text-end text-nowrap">Address</label>
+                        <div class="col-sm-8">
+                            <p class="mb-0 fs-6 fw-bold">số 111 đường Mỹ Đình
+                                Phường Mỹ Đình 2
+                                Quận Nam Từ Liêm
+                                Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="operation">
+                        <div class="d-flex justify-content-end">
+                            <a type="button" class="btn text-primary d-flex align-items-center ms-1" data-bs-toggle="modal"
+                                data-bs-target="#editModal">
+                                <ion-icon name="pencil-outline"></ion-icon><small class="ps-1">change</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list row py-4">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <label class="col-sm-4 col-form-label text-end text-nowrap">Full
+                            Name</label>
+                        <div class="col-sm-8 d-flex align-items-center">
+                            <p class="mb-0 fs-6 fw-bold">Your Full Name</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4 col-form-label pt-0 text-end text-nowrap">Phone
+                            Number</label>
+                        <div class="col-sm-8">
+                            <p class="mb-0 fs-6 fw-bold">Your Phone Number</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-4 col-form-label pt-0 text-end text-nowrap">Address</label>
+                        <div class="col-sm-8">
+                            <p class="mb-0 fs-6 fw-bold">số 111 đường Mỹ Đình
+                                Phường Mỹ Đình 2
+                                Quận Nam Từ Liêm
+                                Hà Nội</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="operation">
+                        <div class="d-flex justify-content-end">
+                            <a type="button" class="btn text-primary d-flex align-items-center ms-1" data-bs-toggle="modal"
+                                data-bs-target="#editModal">
+                                <ion-icon name="pencil-outline"></ion-icon><small class="ps-1">change</small>
+                            </a>
+                            <a type="button" class="btn txt-red-light d-flex align-items-center ms-1">
+                                <ion-icon name="trash-bin-outline"></ion-icon><small class="ps-1">delete</small>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-end my-2">
+                            <a type="button"
+                                class="btn btn-outline-primary d-flex align-items-center justify-content-center px-5">
+                                <small class="ps-1">Set Default</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content px-4 py-5">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Change Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="formEdit">
+                    <div class="row">
+                        <div class="col-sm-6 form-field mb-3 position-relative">
+                            <input type="text" class="form-input w-100 rounded-3 px-3 py-2" name="Name" id="Name" placeholder="Enter">
+                            <label for="Name" class="position-absolute top-50 start-25 translate-middle-y bg-white rounded-pill px-1 ms-3">Full name</label>
+                        </div>
+                        <div class="col-sm-6 form-field mb-3 position-relative">
+                            <input type="text" class="form-input w-100 rounded-3 px-3 py-2" name="PhoneNumber" id="PhoneNumber" placeholder="Enter">
+                            <label for="PhoneNumber" class="position-absolute top-50 start-25 translate-middle-y bg-white rounded-pill px-1 ms-3">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="form-field position-relative mb-3">
+                        <input type="text" class="form-input w-100 rounded-3 px-3 py-2" name="Address" id="Address" placeholder="Enter">
+                        <label for="Address" class="position-absolute top-50 start-25 translate-middle-y bg-white rounded-pill px-1 ms-1">Province/City, District/District, Ward/Commune</label>
+                    </div>
+                    <div class="form-field position-relative mb-3">
+                        <input type="text" class="form-input w-100 rounded-3 px-3 py-2" name="SpecificAddress" id="SpecificAddress" placeholder="Enter">
+                        <label for="SpecificAddress" class="position-absolute top-50 start-25 translate-middle-y bg-white rounded-pill px-1 ms-1">Specific address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+    
+                    </div>
+                    <div class="address-type">
+                        <label for="" class="me-4">Address Type:</label>
+                        <button type="button" class="btn btn-outline-primary mx-2" value="true"
+                            name="AddressType">Home</button>
+                        <button type="button" class="btn btn-outline-primary mx-1" value="false"
+                            name="AddressType">Office</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" disabled>Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>

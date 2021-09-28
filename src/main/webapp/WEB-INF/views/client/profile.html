@@ -1,0 +1,88 @@
+<div class="card bg-transparent text-muted border px-4">
+    <div class="card-header px-0 py-3 bg-transparent">
+        <h4 class="text-secondary">My profile</h4>
+        <p class="mb-0">Manage profile information to protect your account</p>
+    </div>
+    <div class="card-body px-0">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end">User Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext"
+                            name="UserName" id="UserName" value="Name" disabled>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end text-nowrap">Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="Name" id="Name">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end text-nowrap">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext" name="Email"
+                            id="Email" disabled>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end text-nowrap">Phone
+                        Number</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext"
+                            name="PhoneNumber" id="PhoneNumber" disabled>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end text-nowrap">Gender</label>
+                    <div class="col-sm-9 d-flex align-items-center">
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios"
+                                id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label text-end text-nowrap">Date of
+                        birth</label>
+                    <div class="col-sm-9">
+                        <input type="date" class="form-control" name="Date" id="Date"
+                            value="currentDate();">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3"></label>
+                    <div class="col-sm-9">
+                        <button type="button" class="btn bg-green text-white"
+                            id="ChangeInfo">Change</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="container-fluid border-start border-1 d-flex flex-column align-items-center p-0" style="border-color: lightgrey;">
+                    <img class="img-fluid rounded-circle my-2"
+                        src="https://i.pinimg.com/236x/b8/dd/06/b8dd063c5b84d9a478e4c3366bc9a678.jpg"
+                        alt="" style="width:200px;height: 200px;" id="ImgDefault">
+                    <input type="file" class="visually-hidden" name="Image" id="ImgChange" accept=".jpg,.jpeg,.png">
+                    <button type="button" class="btn btn-outline-secondary mt-2 mb-3" onclick="openFile();">Choose Image</button>
+                    <p>
+                        Dung lượng file tối đa 1 MB
+                        <br>
+                        Định dạng:.JPEG, .PNG
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
